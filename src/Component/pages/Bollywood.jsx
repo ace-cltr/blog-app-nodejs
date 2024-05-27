@@ -1,13 +1,11 @@
 import { useContext } from "react";
 import { Contextdata } from "../Contextapi/Contextapi";
 import { Link } from "react-router-dom";
-import video from "../images/video.mp4"
+import video from "../images/video.mp4";
 
 import "./Style.css";
 
 export const Bollywood = () => {
-  
-
   const apidata = useContext(Contextdata);
 
   function truncateDescription(description, numWords) {
@@ -76,7 +74,6 @@ export const Bollywood = () => {
                   </div>
                 );
               })}
-         
           </div>
         </div>
 
@@ -84,7 +81,7 @@ export const Bollywood = () => {
           <div className="bollywood-inner-content">
             <div className="post">Top Post</div>
             {apidata
-              .filter((item) => item.id >= 19 && item.id <23)
+              .filter((item) => item.id >= 19 && item.id < 23)
               .map((data, index) => {
                 const count = index + 1;
                 return (
@@ -110,7 +107,7 @@ export const Bollywood = () => {
                 );
               })}
             <div className="advertisement">
-            <video src={video}   muted loop autoPlay></video>
+              <video src={video} muted loop autoPlay></video>
             </div>
           </div>
         </div>

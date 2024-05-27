@@ -21,15 +21,22 @@ export const Detaildesciption = () => {
     return truncatedDescription;
   }
 
+  var today = new Date();
+  var dd = String(today.getDate()).padStart(2, "0");
+  var mm = String(today.getMonth() + 1).padStart(2, "0"); //January is 0!
+  var yyyy = today.getFullYear();
+
+  today = mm + "/" + dd + "/" + yyyy;
+
   return (
     <>
       <div className="unique-image">
         <div className="like-share">
           <div className="like-heading">
-            <span className="material-symbols-outlined">thumb_up</span>Like
+            <i className="fa-solid fa-thumbs-up"></i>Like
           </div>
           <div className="share">
-            <span className="material-symbols-outlined">share</span>Share
+          <i className="fa-solid fa-share"></i>share
           </div>
         </div>
         <div className="child-of-des">
@@ -39,14 +46,14 @@ export const Detaildesciption = () => {
               <img src={logo} alt="" />
             </div>
             <div className="names">
-              <h5>Sumit rawat</h5>
-              <h5>4 August 2023</h5>
+              <h5>Anand Vishwakarma</h5>
+              <h5>{today}</h5>
             </div>
             <div>
               <div className="logo">
-                <i className="fa-brands fa-square-facebook fa-beat-fade fa-2xl"></i>
-                <i className="fa-brands fa-square-instagram insta fa-beat-fade fa-2xl"></i>{" "}
-                <i className="fa-brands fa-square-twitter fa-beat-fade fa-2xl"></i>
+                <i className="fa-brands fa-facebook fa-beat-fade fa-2xl"></i>
+                <i className="fa-brands fa-instagram fa-beat-fade fa-2xl"></i>
+                <i className="fa-brands fa-twitter fa-beat-fade fa-2xl"></i>
                 <i className="fa-brands fa-youtube fa-beat-fade fa-2xl"></i>
               </div>
             </div>
@@ -57,7 +64,7 @@ export const Detaildesciption = () => {
             <p>{imageData.description}</p>
           </div>
           <div className="like">
-            <span className="material-symbols-outlined">thumb_up</span>
+            <span className="material-symbols-outlined">👍</span>
             <p>Like</p>
           </div>
           <hr />
@@ -67,9 +74,9 @@ export const Detaildesciption = () => {
               <img src={logo} alt="" />
             </div>
             <div className="names">
-              <h5>Written by</h5>
-              <h5>Sumit rawat</h5>
-              <h5>4 August 2023</h5>
+              <h5>Post by</h5>
+              <h5>Anand Vishwakarma</h5>
+              <h5>{today}</h5>
             </div>
           </div>
           <hr />
@@ -108,8 +115,8 @@ export const Detaildesciption = () => {
                     </div>
                     <div className="names">
                       <h5>Written by</h5>
-                      <h5>Sumit rawat</h5>
-                      <h5>4 August 2023</h5>
+                      <h5>Anand Vishwakarma</h5>
+                      <h5>{today}</h5>
                     </div>
                   </div>
                 </div>

@@ -3,12 +3,9 @@ import { Contextdata } from "../Contextapi/Contextapi";
 import { Link } from "react-router-dom";
 
 import "./Style.css";
-import video from "../images/video.mp4"
+import video from "../images/video.mp4";
 export const Fitness = () => {
   const apidata = useContext(Contextdata);
-
-
- 
 
   function truncateDescription(description, numWords) {
     const words = description.split(" ");
@@ -19,8 +16,6 @@ export const Fitness = () => {
 
   // ------------------------------------------usesate---------------------------
 
- 
-
   return (
     <>
       <div className="boll-heading">
@@ -28,12 +23,14 @@ export const Fitness = () => {
       </div>
       <div className="bollywood-data">
         {apidata
-          .filter((item) => item.id >=70 && item.id < 78)
+          .filter((item) => item.id >= 70 && item.id < 78)
           .map((data, index) => {
             return (
-              <div className="imagedata" key={index} >
-                <div className="child" >
-                  <Link to={"/detaildescription/" + data.id+"/"+data.catgory}>
+              <div className="imagedata" key={index}>
+                <div className="child">
+                  <Link
+                    to={"/detaildescription/" + data.id + "/" + data.catgory}
+                  >
                     <img src={data.Image} alt="click here" />
                   </Link>
                   <div className="title">{data.heading}</div>
@@ -54,12 +51,16 @@ export const Fitness = () => {
         <div className="bollywood-firstinner-container">
           <div className="bollywood-content">
             {apidata
-              .filter((item) => item.id >= 78 && item.id <87)
+              .filter((item) => item.id >= 78 && item.id < 87)
               .map((data, index) => {
                 return (
                   <div key={index}>
-                    <div className="child" >
-                      <Link to={"/detaildescription/" + data.id+"/"+data.catgory}>
+                    <div className="child">
+                      <Link
+                        to={
+                          "/detaildescription/" + data.id + "/" + data.catgory
+                        }
+                      >
                         <img src={data.Image} alt="click here" />
                       </Link>
                       <div className="title">{data.heading}</div>
@@ -72,7 +73,6 @@ export const Fitness = () => {
                   </div>
                 );
               })}
-        
           </div>
         </div>
 
@@ -80,13 +80,17 @@ export const Fitness = () => {
           <div className="bollywood-inner-content">
             <div className="post">Top Post</div>
             {apidata
-              .filter((item) => item.id >= 86 && item.id <=91)
+              .filter((item) => item.id >= 86 && item.id <= 91)
               .map((data, index) => {
                 const count = index + 1;
                 return (
-                  <div  key={index}>
+                  <div key={index}>
                     <div className="child">
-                      <Link to={"/detaildescription/" + data.id+"/"+data.catgory}>
+                      <Link
+                        to={
+                          "/detaildescription/" + data.id + "/" + data.catgory
+                        }
+                      >
                         <img src={data.Image} alt="click here" />
                       </Link>
                       <div className="title">{data.heading}</div>
@@ -102,7 +106,7 @@ export const Fitness = () => {
                 );
               })}
             <div className="advertisement">
-            <video src={video}   muted loop autoPlay></video>
+              <video src={video} muted loop autoPlay></video>
             </div>
           </div>
         </div>
