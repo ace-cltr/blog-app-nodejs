@@ -1,13 +1,12 @@
-import  { useContext } from "react";
+import { useContext } from "react";
 import { Contextdata } from "../Contextapi/Contextapi";
 import { Link } from "react-router-dom";
-import video from "../images/video.mp4"
+import video from "../images/video.mp4";
 
 import "./Style.css";
 
 export const Hollywood = () => {
   const apidata = useContext(Contextdata);
- 
 
   function truncateDescription(description, numWords) {
     const words = description.split(" ");
@@ -17,8 +16,6 @@ export const Hollywood = () => {
   }
 
   // ------------------------------------------usesate---------------------------
-
- 
 
   return (
     <>
@@ -30,9 +27,11 @@ export const Hollywood = () => {
           .filter((item) => item.id > 45 && item.id < 54)
           .map((data, index) => {
             return (
-              <div className="imagedata" key={index} >
-                <div className="child" >
-                  <Link to={"/detaildescription/" + data.id+"/"+data.catgory}>
+              <div className="imagedata" key={index}>
+                <div className="child">
+                  <Link
+                    to={"/detaildescription/" + data.id + "/" + data.catgory}
+                  >
                     <img src={data.Image} alt="click here" />
                   </Link>
                   <div className="title">{data.heading}</div>
@@ -58,7 +57,11 @@ export const Hollywood = () => {
                 return (
                   <>
                     <div className="child" key={index}>
-                      <Link to={"/detaildescription/" + data.id+"/"+data.catgory}>
+                      <Link
+                        to={
+                          "/detaildescription/" + data.id + "/" + data.catgory
+                        }
+                      >
                         <img src={data.Image} alt="click here" />
                       </Link>
                       <div className="title">{data.heading}</div>
@@ -71,7 +74,6 @@ export const Hollywood = () => {
                   </>
                 );
               })}
-           
           </div>
         </div>
 
@@ -79,13 +81,17 @@ export const Hollywood = () => {
           <div className="bollywood-inner-content">
             <div className="post">Top Post</div>
             {apidata
-              .filter((item) => item.id >= 63 && item.id <=69)
+              .filter((item) => item.id >= 63 && item.id <= 69)
               .map((data, index) => {
                 const count = index + 1;
                 return (
                   <>
                     <div className="child" key={index}>
-                      <Link to={"/detaildescription/" + data.id+"/"+data.catgory}>
+                      <Link
+                        to={
+                          "/detaildescription/" + data.id + "/" + data.catgory
+                        }
+                      >
                         <img src={data.Image} alt="click here" />
                       </Link>
                       <div className="title">{data.heading}</div>
@@ -98,10 +104,10 @@ export const Hollywood = () => {
 
                     <hr />
                   </>
-                );
+                )
               })}
             <div className="advertisement">
-            <video src={video}   muted loop autoPlay></video>
+              <video src={video} muted loop autoPlay></video>
             </div>
           </div>
         </div>
