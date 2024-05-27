@@ -12,7 +12,7 @@ function Footer() {
         <Link to={"https://www.instagram.com/_anand.vish_/"}>
           <i className="fa-brands fa-instagram  fa-beat-fade fa-2xl "></i>
         </Link>
-        <Link to={"linkedin.com/in/anand-vishwakarma-87a57a276"}>
+        <Link to={"https://www.linkedin.com/in/anand-vishwakarma-87a57a276/"}>
           <i className="fa-brands fa-linkedin fa-beat-fade fa-2xl"></i>
         </Link>
 
