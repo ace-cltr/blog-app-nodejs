@@ -1,0 +1,486 @@
+/* -------------------------------home tab=-------------------------------- */
+
+/* -----------------------------------------home css ------------------------------------------ */
+.top-container {
+  display: grid;
+  margin-top: 40px;
+  grid-template-columns: 760px 310px; /* Updated: Use 1fr instead of pixel values */
+ 
+  justify-content: center;
+  gap: 10px;
+ 
+}
+
+.first-container img{
+  box-shadow: 2px 2px 21px 2px gray;
+  border-radius: 10px;
+  height: 515px;
+  width: 100%;
+}
+.second-container img{
+  box-shadow: 2px 2px 21px 2px gray;
+  border-radius: 10px;
+  height: 250px;
+  width: 100% ;
+}
+.third-container img{
+  box-shadow: 2px 2px 21px 2px gray;
+  border-radius: 10px;
+  height: 250px;
+  width: 100%;
+}
+.first-container {
+  
+ 
+  grid-column: 1/2;
+ 
+  grid-row: 1/3;
+}
+
+.second-container {
+
+ 
+  
+ 
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+
+.third-container {
+
+
+ 
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+
+/* Add the following CSS to make images resize according to grid cells */
+
+
+/* ----------------------------new ------------------------- */
+
+
+
+
+.data-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.box {
+  width: 300px;
+  height: 350px;
+  background-color: red;
+}
+
+
+
+
+
+
+
+.top-second-container {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.inner-container {
+ max-width: 45%; /* Adjust the width as needed */
+ min-width: 400px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+
+}
+
+.content {
+  height: 200px;
+  width: 300px; /* Reduced width to fit available space */
+  background-color: aqua;
+}
+
+.inner-second-container {
+ max-width: 40%;
+ min-width: 400px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+
+  flex-wrap: wrap;
+}
+
+.inner-content {
+  height: 200px;
+  width: 500px;
+  background-color: tomato;
+}
+
+.inner-content1 {
+  height: 750px;
+  width: 500px;
+  background-color: tomato;
+}
+
+
+
+
+
+
+/* ------------------------------------------------bollywood css-------------------------------- */
+
+
+.boll-heading{
+  display: inline-block;
+  margin-left: 40px;
+  text-decoration: underline;
+  margin-top: 20px;
+ 
+
+}
+.boll-heading h1{
+  font-family: Montserrat,sans-serif;
+  font-weight: 100;
+}
+.bollywood-data{
+  margin-top: 50px;
+  display: flex;
+  gap: 10px;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  
+ 
+
+}
+
+.title{
+  text-align: center;
+  font-size: large;
+  font-weight: 400;
+  text-decoration: underline;
+}
+
+
+.child{
+
+  width: 305px;
+  margin-bottom: 50px;
+}
+
+
+.imagedata img{
+  height: 200px;
+  width: 100%;
+  box-shadow: 2px 2px 21px 2px gray;
+  border-radius: 10px;
+  
+}
+
+
+.heading{
+  text-align: center;
+  
+}
+
+
+
+/* -----------------------for stories stylling----------------------------- */
+
+
+.stories{
+  font-size: xx-large;
+  font-weight: 600;
+  text-decoration: underline;
+padding-left: 100px;
+  margin-bottom: 50px;
+}
+
+
+.bollywood-first-container{
+  display: flex;
+  flex-wrap: wrap;
+ justify-content: space-around;
+ padding: 50px;
+ 
+}
+
+
+/* .bollywood-firstinner-container{
+
+} */
+.bollywood-content .child{
+  height: 237px;
+  max-width: 800px;
+  min-width: 500px;
+
+  margin-top: 20px;
+}
+
+.bollywood-content .child img{
+  float: left;
+  margin-right: 5px;
+  box-shadow: 2px 2px 21px 2px gray;
+  border-radius: 10px;
+  
+
+  
+}
+.bollywood-content .child .description{
+  float: revert;
+  width: 496px;
+
+  
+}
+.bollywood-content .child img{
+  height: 213px;
+  width: 304px;
+}
+
+.load{
+  font-size: xx-large;
+  margin: 30px;
+}
+.material-symbols-outlined{
+  font-size: xx-large;
+}
+
+/* -----------------------------top post-----------------------------------------------------  */
+
+
+.post{
+  font-size: xx-large;
+  font-weight: 200;
+  text-decoration: underline;
+}
+
+.bollywood-inner-content .child{
+  height: 199px;
+  max-width: 1000px;
+  min-width: 571px;
+  
+  margin-top: 20px;
+
+}
+
+.bollywood-inner-content .child img{
+  height: 105px;
+  width: 114px;
+  box-shadow: 2px 2px 21px 2px gray;
+  border-radius: 10px;
+
+}
+
+.bollywood-inner-content .child img{
+  float: left;
+  height: 197px;
+  width: 258px;
+  margin-right: 14px;
+  
+}
+.bollywood-inner-content .child .description{
+  float: revert;
+  
+}
+.count{
+  float: right;
+  font-size: 60px;
+  color: rgb(0, 110, 255);
+  font-weight: 900;
+  transform: translateY(35px);
+}
+
+
+
+
+/* ------------------------ads----------------------- */
+
+
+
+
+.advertisement {
+  
+  margin-top: 50px;
+  display: flex;
+  
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 570px;
+}
+
+.advertisement video {
+  border-radius: 10px;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* ------------------------footer------------------------ */
+
+
+
+/* -----------------------------------------------media query----------------------------------------- */
+
+
+
+
+@media screen and (min-width:620px) and (max-width:1171px){
+  .top-container {
+    display: grid;
+    margin-top: 40px;
+    grid-template-columns: 400px 200px; /* Updated: Use 1fr instead of pixel values */
+   
+    justify-content: center;
+    gap: 10px;
+   
+  }
+  
+.first-container img{
+  height: 315px;
+  width: 100%;
+}
+.second-container img{
+  height: 150px;
+  width: 100% ;
+}
+.third-container img{
+  height: 150px;
+  width: 100%;
+}
+
+
+.bollywood-first-container{
+  display: flex;
+  flex-wrap: wrap;
+ justify-content: flex-start;
+ padding: 50px;
+ 
+}
+
+.advertisement{
+  display: none;
+}
+
+
+
+
+
+}
+
+
+@media screen and (min-width:300px) and (max-width:620px)
+{
+
+
+  .top-container {
+    display: grid;
+    margin-top: 40px;
+    grid-template-columns: 1fr; 
+    
+   
+    justify-content: center;
+    gap: 10px;
+   
+  }
+
+
+  .first-container {
+    display: flex;
+    justify-content: center;
+ 
+    grid-column: 1/2;
+   
+    grid-row: 1/2;
+  }
+  .first-container img{
+    height: 300px;
+    width: 90%;
+  }
+  .second-container img{
+    width: 90%;
+  }
+  .third-container img{
+    width: 90%;
+  }
+  .second-container {
+    display: flex;
+    justify-content: center;
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  
+  .third-container {
+    display: flex;
+    justify-content: center;
+   
+  
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+  .advertisement{
+    display: none;
+  }
+  .bollywood-content .child{
+    height: 131px;
+    max-width: 800px;
+    min-width: 300px;
+    margin-top: 20px;
+  }
+  .bollywood-content .child .description{
+    float: revert;
+    width: 279px;
+    
+  
+    
+  }
+  .bollywood-content .child .description{
+    float: revert;
+    width: 279px;
+    
+  
+    
+  }
+  .bollywood-content .child img{
+    height: 150px;
+      width: 150px;
+  }
+
+
+
+  /* -------------------------for stories ------- */
+  .bollywood-inner-content .child{
+    height: 100px;
+    max-width: 1000px;
+    min-width: 300px;
+   
+  
+  }
+  .bollywood-inner-content .child img{
+    float: left;
+    
+    
+  }
+
+  .bollywood-inner-content .child img{
+    height: 105px;
+    width: 114px;
+   
+  
+  }
+
+
+  .count{
+  
+   transform: translateY(-22px);
+}
+
+
+
+
+
+}
